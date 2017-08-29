@@ -11,24 +11,16 @@ Please do not use any resource other than the class wiki
 (or the materials it references)
 to answer these questions.
 
-1.  What are the three requirements for completing this course?
-2.  At what URL can you find a series of videos covering the terminal, created
-    by one of GA's senior instructors?
-3.  What book by Douglas Crockford is on our recommended reading list?
-4.  According to our Git style guide, when writing the detailed description of
-    a commit in its commit message, what three types of things are most
-    important to mention?
-5.  What does a bug report need to have before it can be submitted to the bug
-    journal?
+1.  Homework submissions needs to be atleast 80%, consistent attendance, all unit projects must be submited & presented to team & meet expectations.
+2.  https://www.youtube.com/playlist?list=PLdnONIhPScSToZztXRHyKZTQEsE30luMx
+3.  JavaScript the Good Parts
+4.  why is the change neccessarry, how does it address the issue, what side effects does this change have.
+5.  copy the error msg, copy the code in question, write a paragraphexplaining what you think the error is, what it turned out to be and how it was solved.
 6.  There are three Git tutorials referenced in the Wiki. What are they?
-7.  List at least two basic UI styling tips that will help your projects
-    look good.
-8.  What is the maximum number of absences a student can have, and how many
-    'tardies' are equal to an absence?
-9.  Where can you find a directory of publicly-accessible APIs?
-    Give at least one URL.
-10. What two holidays will we have during this course (not counting the long
-    winter break)?
+7.  1: Dont use black, use off black instead. 2: Get custom fonts to add flair. 3: style buttons.
+8.  3 absences 2 tardies
+9.  https://opendata.cityofnewyork.us/
+10. labor day, halloween
 
 ## Submitting Your Work
 
@@ -43,6 +35,4 @@ The issue body should have:
     2. A) Answer two, part one, B) Answer two, part two
     ...
     ```
-
--   A 'comfort' score on how you feel about your answers, from 1 (very
-    uncomfortable) to 5 (very comfortable)
+comfort score=4
