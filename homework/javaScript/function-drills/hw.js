@@ -11,7 +11,11 @@
 // Output: the sum of the numbers that were passed in
 // Edge Case: If the array is empty, return 0
 var sumOfNums = function(numsArray){
-  // Your Code Here
+  let total = 0;
+  for (let i = 0, i < numsArray.length; i++) {
+    total += numsArray[i];
+  }
+  return total;
 };
 
 // #2
