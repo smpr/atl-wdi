@@ -60,13 +60,23 @@ track of whether tasks have been completed, it will also keep track of
 how long each task took to complete. Tasks can be grouped into 'projects' to
 keep them organized.
 
-> Answer here
-
+project name-
+task name
+task completed?
+-yes? completion time
 ### 2. Photo Sharing App
 
 In this app, users can upload photos to their accounts and share them with others. These photos can be grouped into albums.
 
-> Answer here
+> photo
+  upload? 
+    yes? share?
+            yes? Send to freinds
+            no? send to profile
+          Group in album?
+            yes? which album
+            no? upload to general file
+    no? Dont do anything
 
 ### 3. Home Automation Manager
 
@@ -75,7 +85,13 @@ track of the time and temperature of the house that it monitors, and use that
 information to turn on and off different lights and adjust the thermostat up
 and down.
 
-> Answer here
+home name
+  time
+    too dark? turn on lights
+    too light? turn off lights
+  temp
+    too hot? turn on ac
+    too cold? turn on heat
 
 ### 4. Sneaker Store
 
@@ -83,8 +99,14 @@ This app will allow customers to browse a list of products (sneakers, in this
 case), add those products to a cart, and save that cart as a past order once the
 purchase is complete.
 
-> Answer here
-
+add to cart?
+    Yes?
+      Check out?
+        no-continue sshopping
+        yes- save to past for future?
+            yes-save
+            no-dont save
+    no? keep shopping.
 ## Representing Abstractions in Code
 
 Once you've chosen the abstractions that your app will use, the next step is to
@@ -139,7 +161,7 @@ var exampleLine = {
 
 What are some advantages and disadvantages of choosing these representations? Please give at least one example of each.
 
-> Answer here
+> advantage is that is logical to name these things. disadvantage is that when coding it may get confusing as to what your trying to refrence when dealing with both at the same time. also it doesnt state where the stations are in refrence to each other making it hard to know how many stops are in between.
 
 ### 6. Doctor Appointment App
 
@@ -242,7 +264,7 @@ Under what circumstances might one representation be a better choice than the
 other? Are there any circumstances in which the other representation might be
 the better choice?
 
-> Answer here
+the first option gives great detail into the dr and what patient has apts with him making it easy to see how booked he is. this would be great for a receptionist to see what time slots are available to put patients. the second option is more for the patient to keep track of their apts and with what doctor.
 
 ## Tying It Together
 
@@ -253,13 +275,24 @@ You've been tasked with building an in-browser tic-tac-toe game.
 a.  What are some possible entities that your application might use to model its
     data? Please pick at least two, with at least two properties apiece.
 
-  > Answer here
+    user-1. User name
+         2. region
+    game-1. Background colors
+         2. High Score
+
 
 b.  How might those entities be represented in JavaScript code?
 
-  > Answer here
+  > let user ={
+    userName: 'Some Name',
+    region: 'Some Place'
+  };
+  let game = {
+    background: ' Color ',
+    highscore: 9001
+  }
 
 c.  Justify your choices in a) and b). Why these entities? Why these
     representations?
 
-  > Answer here
+ seems like common interactions to keep track of scores and even lead up to a top scores list. the second makes the user more invested.
