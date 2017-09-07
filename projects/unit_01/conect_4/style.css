@@ -1,0 +1,10 @@
+.boardBackGround {
+    background-color: darkgreen;
+    width: 75%;
+    height: 75%;
+    vertical-align: center;
+    align: center;
+}
+body {
+    background-color: black;
+}

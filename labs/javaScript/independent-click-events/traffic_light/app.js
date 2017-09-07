@@ -7,6 +7,7 @@ window.onload = function() {
 
   stopButton.addEventListener('click', trafficLight.illuminateRed);
   slowButton.addEventListener('click', trafficLight.illuminateYellow);
+  goButton.addEventListener('click', trafficLight.illuminateGreen)
 }
 
 
@@ -20,7 +21,12 @@ var trafficLight = {
   illuminateYellow: function(event) {
     trafficLight.clearLights();
 
-    slowLight.style.background = 'blue';
+    slowLight.style.background = 'yellow';
+  },
+  illuminateGreen: function(event) {
+    trafficLight.clearLights();
+
+    goLight.style.background = 'green';
   },
 
   clearLights: function() {
