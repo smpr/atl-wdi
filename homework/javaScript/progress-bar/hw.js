@@ -4,15 +4,24 @@
 
 var timerUI = {
   drawNumericDisplay: function(timerValue){
-    // Your Code Here
+   document.getElementById('numeric-display').textContent=timerValue;
   },
   drawProgressBars: function(timerValue){
-    // Your Code Here
+    document.getElementsByClassName('progress-bar')[0].style.width= (100 - timerValue) + '%';
+
+ 
   },
   drawLitFuses: function(timerValue){
-    // Your Code Here
+    // if(timerValue <= 98){document.getElementsByClassName('unburnt')[0].style.width=timerValue + '%';
+    //     document.getElementsByClassName('burnt')[0].style.width= (100 - timerValue) + '%';  
+
+        var percentUnburnt = timerValue/100;
+        document.getElementsByClassName('unburnt')[0].style.width = percentUnburnt * 98 + '%';
+        document.getElementsByClassName('burnt')[0].style.width = (1 - percentUnburnt) * 98 + '%';
+        //// REACH
+  //}
+    
   },
   drawCrawlers: function(timerValue){
-    // Your Code Here
-  }
+    document.getElementsByClassName('crawler')[0].style.width= (100 - timerValue) + '%';  }
 };

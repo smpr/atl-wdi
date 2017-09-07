@@ -1,7 +1,9 @@
 //  1. Write a function `lengths` that accepts a single parameter as an argument, namely
 // an array of strings. The function should return an array of numbers where each
 // number is the length of the corresponding string.
-
+const lengths = (something) => {
+    
+}
 // your code here
 
 // 2. Write a Javascript function called `transmogrifier`
