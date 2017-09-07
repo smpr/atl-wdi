@@ -12,16 +12,15 @@ var timerUI = {
  
   },
   drawLitFuses: function(timerValue){
-    // if(timerValue <= 98){document.getElementsByClassName('unburnt')[0].style.width=timerValue + '%';
-    //     document.getElementsByClassName('burnt')[0].style.width= (100 - timerValue) + '%';  
-
-        var percentUnburnt = timerValue/100;
+    
+// had issues figuring out why the fuse started on the left side then moved right. After looking at the solution it became clear that it was actually on the second row then moved up. thus why it is at 98%
+        const percentUnburnt = timerValue/100;
         document.getElementsByClassName('unburnt')[0].style.width = percentUnburnt * 98 + '%';
         document.getElementsByClassName('burnt')[0].style.width = (1 - percentUnburnt) * 98 + '%';
-        //// REACH
-  //}
+        
     
   },
   drawCrawlers: function(timerValue){
-    document.getElementsByClassName('crawler')[0].style.width= (100 - timerValue) + '%';  }
+    // wasnt sure exactly how to move the bug accross the screen but it felt like it had the same idea as above minus the width. any input would be greatly appreciated
+    document.getElementsByClassName('crawler')[0].style.position= (100 - timerValue) + '%';  }
 };
