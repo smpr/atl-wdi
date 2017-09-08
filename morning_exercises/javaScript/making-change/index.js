@@ -5,8 +5,16 @@
 /// DO NOT EDIT ABOVE THIS LINE ///
 
 var makeChange = function(price, payment) {
-  // Your Code Here
-};
+let change=(payment * 100) - (price * 100)};
+let increments=[0,0,0,0]
+if(change === 0){
+  console.log('exact change')
+  return increments=[0,0,0,0]
+}
+if(change / 1) {
+  var changeQu = change / 25;
+  
+}
 
 /// DO NOT EDIT BELOW THIS LINE ///
 module.exports = {
