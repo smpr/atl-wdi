@@ -24,12 +24,31 @@ const Stopwatch = {
     // Your Code Here
   },
   start: function(){
+    //iff stopwatch is not running
+      //stopwatch starts
+        //numbers of minutes seconds and milliseconds elapse and show in browser
+    // if stopwatch is running
+      //nothing will happen
+      //else{blank};
+    
     // Your Code Here
   },
   stop: function(){
+    //if stopwatch is running
+      //stopwatch stops running
+      //numbers no longer updates
+    //if stopwatch is not running
+      //time on stopwatch will be reset
+      //display will reset to 00.00.00
+      //list of laps will be erased
     // Your Code Here
   },
   lap: function(){
+    //if stopwatch is running
+      //lap record shows at the bottom of page
+    //if stopwatch is not running
+      //nothing happens
+      //else{blank};
     // Your Code Here
   }
 };
