@@ -2,6 +2,8 @@
 // Copyright (C) 2016 Matt Brendzel under the GNU General Public License.
 // See LICENSE for details.
 
+const $testScript = function(){
+  console.log('Test')};
 /// Data & Core Business Logic ///
 const Stopwatch = {
   tickClock: function(){
@@ -19,13 +21,22 @@ const Stopwatch = {
   // DO NOT EDIT ABOVE THIS LINE
   advanceTenMillisecs: function(){
     // Your Code Here
+    
   },
   reset: function(){
+    //reset all the values of to 0
+    mins: 0;
+    secs: 0;
+    millisecs: 0;
+    laps: 
+    console.log('reset function pass')
     // Your Code Here
   },
+
   start: function(){
+    
     //iff stopwatch is not running
-      //stopwatch starts
+      //stopwatch starts    
         //numbers of minutes seconds and milliseconds elapse and show in browser
     // if stopwatch is running
       //nothing will happen
@@ -56,6 +67,7 @@ const Stopwatch = {
 /// User Interface ///
 const ViewEngine = {
   updateTimeDisplay: function(mins, secs, millisecs){
+    //$()
     // Your Code Here
   },
   updateLapListDisplay: function(laps){
