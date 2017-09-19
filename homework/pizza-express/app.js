@@ -2,6 +2,10 @@
 
 //require express package
 var express = require('express');
+var hbs = require('hbs');
+
+app.set("view engine", "hbs");
+app.set('views', './views')
 //save an express module as 'app'
 var app     = express();
 // assigning 3000 as our port
