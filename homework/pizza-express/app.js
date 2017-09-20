@@ -22,6 +22,11 @@ app.get('/order/:amount/:size', function(req, res) {
                  message: req.params.size
              });
          });
+app.get('/:name',function(req,res){
+    res.render('index', {
+        message: req.params.name
+    })
+})
 // tells the server to listen for requests on port 3000
 app.listen(port, function(){
   console.log("==========================")
