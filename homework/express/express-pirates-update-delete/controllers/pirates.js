@@ -49,7 +49,7 @@ router.get('/new', (req,res)=>{
 //==============================
 router.get('/:id/edit', (req,res)=>{
     res.render('pirates/edit', {
-        tondont: {
+        pirates: {
             id: {
                 id:req.params.id,
                 name: pirates.seededPirates[req.params.id],
