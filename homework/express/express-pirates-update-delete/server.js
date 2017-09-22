@@ -6,6 +6,7 @@ var app = express();
 var logger = require("morgan");
 var bodyParser = require("body-parser");
 var hbs = require('hbs');
+var methodOverride = require('method-override')
 
 
 //===========================
@@ -27,8 +28,12 @@ app.set('views', './views');
 //controllers for `/pirates` resource
 var pirateController = require('./controllers/pirates.js');
 app.use("/pirates", pirateController);
+app.use(methodOverride('_method'))
 
-
+app.get('/', (req,res)=>{
+    //send sends data to the browser 
+    res.send("This is our home page")
+})
 //===========================
 // LISTENERS
 //===========================
