@@ -12,6 +12,7 @@ var pirates = require('../models/pirates.js');
 //for root pirate page
 router.get('/', function(req, res){
 	res.render("pirates/index.hbs", {
+		//pirates.seededPirates grabs the data from the pirates.js and looks for the seededPirates var
 		pirates: pirates.seededPirates
 	});
 });
