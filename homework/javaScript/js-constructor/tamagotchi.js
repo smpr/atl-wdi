@@ -10,8 +10,18 @@ class Pet {
     }
     cry(){
         this.foodInTummy--;
-        console.log(this.name+' has this('+this.foodInTummy+') much food left');
+        console.log(this.name+' has '+this.foodInTummy+' food left');
         console.log(this.name+' wants food!')
+    }
+    puke(){
+        this.foodInTummy--;
+        console.log(this.name+ " just threw up!")
+        console.log(this.name+" has " +this.foodInTummy+ " food left!")
+    }
+    yawn(){
+        this.restedness--;
+        console.log(this.name+" is getting tired!")
+        console.log(this.name+" has current restedness of: "+ this.restedness)
     }
 }
 
@@ -20,4 +30,6 @@ const newPet1 = new Pet("Bob");
 const newPet2 = new Pet("Banana");
 //test out your Tamagotchies below via console.logs
 newPet1.cry();
+newPet1.puke();
+newPet1.yawn();
 newPet2.cry();
