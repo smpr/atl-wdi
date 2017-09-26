@@ -1,24 +1,15 @@
-//your code here
-var path        = require('path');
-var express     = require('express');
-var hbs         = require('hbs');
-var port        = process.env.PORT || 3000;
-const bodyParser = require('body-parser')
-const app = express();
-var pirateController = require('./controllers/pirates.js');
-
+const express = require('express')
+const hbs = require('hbs')
+const app =express()
+const port = 3000;
+const methodOverride = require('method-override')
+const bodyParser= require('body-parser');
 app.use(bodyParser.urlencoded({extended: true}));
-
-app.set('view engine', 'hbs');
-
-app.use("/pirates", pirateController);
-
-
-
-/* HOME */
-app.get('/', function(req,res) {
-  res.send('This is our Home Page');
-});
-app.listen(port, function() {
-    console.info('Arrg.....', port,"//", new Date());
-  });
+app.use(bodyParser.json());
+app.set("view engone", "hbs")
+app.set('views', './views')
+const pirateController = require('./controllers/pirates.js')
+app.use(methodOverride('_method'))
+app.listen(port,()=>{
+  console.log("Im watching you....")
+})

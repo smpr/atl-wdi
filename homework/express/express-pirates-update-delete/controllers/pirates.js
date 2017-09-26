@@ -18,9 +18,7 @@ router.get('/', function(req, res){
 });
 
 
-router.get('/new', (req, res)=>{
-	res.render("pirates/new.hbs");
-});
+
 
 
 //this is for each pirate page
