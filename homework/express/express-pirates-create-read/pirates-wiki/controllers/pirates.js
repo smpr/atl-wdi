@@ -25,7 +25,7 @@ router.get('/', function(req, res){
 
 
 router.get('/new', (req, res)=>{
-	res.render("./new.hbs");
+	res.render("/new.hbs");
 });
 //exports
 router.get('/:id', function(req, res){
