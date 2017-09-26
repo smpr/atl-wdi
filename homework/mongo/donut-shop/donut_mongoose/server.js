@@ -41,5 +41,6 @@ app.use('/', donutsController);
 //======================
 //CONNECT MONGOOSE TO "donut_store"
 
+mongoose.connect('mongodb://localhost/test');
 
 //CREATE THE MONGOOSE CONNECTION and SET APP TO LISTEN to 3000
