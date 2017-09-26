@@ -79,5 +79,9 @@ router.put('/id', (req,res)=>{
 //==============================
 // EXPORTS
 //==============================
-
+router.post('/', (req,res)=>{
+	const newPirate = req.body
+	pirates.seededPirates.push(newPirate);
+	res.redirect('/pirates')
+	})
 module.exports = router;

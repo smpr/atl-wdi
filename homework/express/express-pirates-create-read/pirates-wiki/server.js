@@ -10,6 +10,10 @@ app.set("view engone", "hbs")
 app.set('views', './views')
 const pirateController = require('./controllers/pirates.js')
 app.use(methodOverride('_method'))
+app.use('/pirates', pirateController)
+app.get('/',(req,res)=>{
+  res.send("Homepage")
+})
 app.listen(port,()=>{
   console.log("Im watching you....")
 })

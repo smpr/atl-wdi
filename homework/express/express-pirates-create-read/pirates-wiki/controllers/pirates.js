@@ -13,11 +13,11 @@ router.get('../new', (req, res) => {
   })
 router.use(bodyParser.urlencoded({ extended: false }));
 router.use(bodyParser.json());
-router.get('/', function(req,res){
-    res.send('Argggg')
-})
+//router.get('/', function(req,res){
+//    res.send('Argggg')
+//})
 router.get('/', function(req, res){
-	res.render("pirates/index.hbs", {
+	res.render("./index.hbs", {
 		//pirates.seededPirates grabs the data from the pirates.js and looks for the seededPirates var
 		pirates: pirates.seededPirates
 	});
@@ -25,7 +25,7 @@ router.get('/', function(req, res){
 
 
 router.get('/new', (req, res)=>{
-	res.render("pirates/new.hbs");
+	res.render("./new.hbs");
 });
 //exports
 router.get('/:id', function(req, res){
@@ -33,7 +33,7 @@ router.get('/:id', function(req, res){
         //grab the pirate by id
         var showPirate = pirates[req.params.id];
     
-        res.render("pirates/show.hbs", {
+        res.render("./show.hbs", {
             pirates: showPirate
         });
     });
