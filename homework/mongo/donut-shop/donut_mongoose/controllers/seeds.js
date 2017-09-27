@@ -6,7 +6,7 @@ const express = require('express')
 const router = express.Router()
 var mongoose = require("mongoose");
 var Donut = require("../models/donuts.js");
-const db = mongoose.connection;
+//const db = mongoose.connection;
 
 router.get('/donuts', function(req, res) {
 
@@ -49,5 +49,5 @@ router.get('/donuts', function(req, res) {
 //======================
 // EXPORTS
 //======================
-db.close();
+//db.close();
 module.exports = router

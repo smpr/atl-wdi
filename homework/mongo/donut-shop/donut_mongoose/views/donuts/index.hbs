@@ -1,8 +1,14 @@
 <main>
+<div>
 	<h2>Handmade, Fresh, Daily!</h2>
-
-		<<<< START THE LOOP TO DISPLAY EACH DONUT >>>>
-
+<div>
+	{{#each Donuts}}
+		<div>
+		<span>Donut: {{this.name}}</span>
+		<span>Description: {{this.description}}</span>
+		<span>IMG{{this.imd}}</span>
+		<span>Price: {{this.price}}</span>
+		<span>Amount: {{this.qty}}</span>
 			<div class="donut-container">
 
 				<<<< DONUT IMAGE HERE >>>>
@@ -12,8 +18,8 @@
 				<p>$ <<<< DONUT PRICE HERE >>>> each </p>
 
 			</div>
-
-		<<<< END THE LOOP >>>>
-
-
+		</div>
+	{{/each}}
+</div>
+</div>
 </main>

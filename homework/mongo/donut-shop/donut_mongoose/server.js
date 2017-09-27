@@ -11,6 +11,16 @@ var hbs = require("hbs");
 var logger = require('morgan');
 const port =3000;
 
+//sets the db as donut_store
+mongoose.connect('mongodb://localhost/donut_store');
+mongoose.Promise = global.Promise
+const db=mongoose.connection
+db.on('error', function(err){
+    console.log(err)
+})
+db.on('open', function(){
+    console.log("DB connected without any issues....surprised? me too....")
+})
 //======================
 // MIDDLEWARE
 //======================
@@ -35,19 +45,12 @@ app.use('/seed', seedController);
 //for root directory, show all donuts
 var donutsController = require('./controllers/donuts.js');
 app.use('/', donutsController);
-const db=mongoose.connection
+
 //======================
 // LISTENERS
 //======================
 //CONNECT MONGOOSE TO "donut_store"
 //error log for db startup
-db.on('error', function(err){
-    console.log(err)
-})
-db.once('open', function(){
-    console.log("DB connected without any issues....surprised? me too....")
-})
-mongoose.connect('mongodb://localhost/donut_shop');
 
 //CREATE THE MONGOOSE CONNECTION and SET APP TO LISTEN to 3000
 app.listen(port,()=>{
