@@ -11,7 +11,16 @@ const DonutModel = Schema.donutModel
 //======================
 // Create a GET index route "/" that sends all donuts to index.hbs
 router.get('/', (request, response)=> {
-    response.render('donuts/index')
+    DonutModel.find({})
+        .then((Donut)=>{
+            response.render('donuts/index', {
+                Donut: Donut
+            })
+        })
+        .catch((error)=>{
+            console.log(error)
+        })
+    
 })
 
 
@@ -31,8 +40,10 @@ router.get('/new',(response,request)=>{
 router.get('/:id', (request, response) =>{
     const donutId = request.params.id
     DonutModel.findById(donutId)
-        .then((donut) =>{
-            response.render()
+        .then((Donut) =>{
+            response.render('/',{
+                Donut: Donut
+            })
         })
 })
 
@@ -62,7 +73,7 @@ router.post('/', (request, response)=>{
 router.get('/:id/edit', (request, response)=>{
     const donutId = request.params.id
     DonutModel.findById(donutId)
-    .then((student)=>{
+    .then((donut)=>{
         response.render('donuts/edit', {
             donut: donut
         })
