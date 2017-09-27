@@ -2,11 +2,11 @@
 // REQUIREMENTS
 //======================
 //require express, mongoose, Donut schema, user
-var express = require("express");
-var router = express.Router();
+const express = require('express')
+const router = express.Router()
 var mongoose = require("mongoose");
 var Donut = require("../models/donuts.js");
-
+const db = mongoose.connection;
 
 router.get('/donuts', function(req, res) {
 
@@ -49,4 +49,5 @@ router.get('/donuts', function(req, res) {
 //======================
 // EXPORTS
 //======================
-module.exports = router;
+db.close();
+module.exports = router
