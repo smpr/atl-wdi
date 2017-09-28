@@ -9,7 +9,7 @@ var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
 var hbs = require("hbs");
 var logger = require('morgan');
-const port =3000;
+const port = 3001;
 
 //sets the db as donut_store
 mongoose.connect('mongodb://localhost/donut_store');

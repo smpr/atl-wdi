@@ -5,7 +5,7 @@
 const express = require('express')
 const router = express.Router()
 const Schema = require("../models/donuts.js");
-const DonutModel = Schema.donutModel
+const DonutModel = Schema.DonutModel
 //======================
 // INDEX
 //======================
@@ -14,7 +14,7 @@ router.get('/', (request, response)=> {
     DonutModel.find({})
         .then((Donut)=>{
             response.render('donuts/index', {
-                Donut: Donut
+              Donut
             })
         })
         .catch((error)=>{
