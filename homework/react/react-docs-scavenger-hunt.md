@@ -14,7 +14,7 @@ No react only updates whats necessary.
 No
 
 5. Are all components classes? 
-Yes.
+No
 
 6. List five "Synthetic Events" provided by React:
 Clipboard Events
