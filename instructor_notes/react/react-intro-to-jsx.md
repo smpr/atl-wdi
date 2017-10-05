@@ -31,7 +31,7 @@ If you've ever written HTML strings within JavaScript, you know that the experie
 
 ## JSX
 
-JSX was created by Facebook to provide a descriptive and clean way to structure the HTML that React sends to the DOM. Before JSX, developers would render HTML through the `React.createElement()` method.
+JSX was chosen by Facebook to provide a descriptive and clean way to structure the HTML that React sends to the DOM. Before JSX, developers would render HTML through the `React.createElement()` method.
 
 ```js
 const HelloWorld = React.createElement({
@@ -55,7 +55,7 @@ const User = React.createElement(
 }
 ```
 
-While this rendered HTML extremely effectively and fast to load, it can be difficult to parse and understand.  Because of this, JSX was created to provide developers a more expressive and familiar way to write elements to be rendered to the DOM.  JSX is written out as a mark-up language, just like HTML.
+While this rendered HTML extremely efficiently, it can be difficult to parse and understand.  Because of this, JSX was created to provide developers a more expressive and familiar way to write elements to be rendered to the DOM.  JSX is written out as a mark-up language, just like HTML.
 
 ```js
 const Element = <h1>Hello World</h1>;
@@ -80,8 +80,8 @@ Navigate to your in-class directory and run `create-react-app react-portfolio`
 ```bash
 create-react-app react-portfolio
 cd react-portfolio
-code . # or subl . or atom .
-yarn start # or npm start
+code .
+npm start
 ```
 
 We now have a basic page that allows us to get started building our portfolio.  Let's first take a deep dive into the starter code that `create-react-app` gave us. Specifically, let's look at the `App.js` file.
