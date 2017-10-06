@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './index.css';
-import Description from './Components/Description.jsx'
-import Contact from './Components/Contact.jsx'
-import Menu from './Components/MenuList.jsx'
-import Locations from './Components/LocationList.jsx'
-import NavBar from './Components/Navbar.jsx'
-import SplashImage from './Components/Splashimage.jsx'
+import Description from './Componentss/Description.jsx'
+import Contact from './Componentss/Contact.jsx'
+import Menu from './Componentss/MenuList.jsx'
+import Locations from './Componentss/LocationList.jsx'
+import NavBar from './Componentss/Navbar.jsx'
+import SplashImage from './Componentss/Splashimage.jsx'
 class App extends Component {
   render() {
     return (
