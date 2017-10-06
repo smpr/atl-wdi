@@ -2,7 +2,7 @@
 
 # Git & GitHub
 
-This morning, we will install and configure Git, and set it up to work with
+This mrning, we will install and configure Git, and set it up to work with
 your respective GitHub accounts.
 
 <br />
