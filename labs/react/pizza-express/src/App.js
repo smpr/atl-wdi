@@ -9,7 +9,7 @@ import SplashImage from './Components/Splashimage.jsx'
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="Appp">
         <NavBar />
         <SplashImage />
         <Description />
