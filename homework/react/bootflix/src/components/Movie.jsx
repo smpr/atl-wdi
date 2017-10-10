@@ -7,6 +7,7 @@ const Movie = () => {
     <section id="movie-listing">
       <div className="movie">
         <h3>Movie Title</h3>
+        <h3>Fill</h3>
         <p>
           <strong>Released:</strong> 1984<br />
           <strong>Directed By:</strong> Some director<br />
