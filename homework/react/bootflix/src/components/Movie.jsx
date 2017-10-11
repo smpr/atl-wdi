@@ -7,7 +7,7 @@ const Movie = (props) => {
     <section id="movie-listing">
       <div className="movie">
         <h3>Movie Title-{props.title}</h3>
-        <h3>Fill</h3>
+        <h3>Plot: {props.plot}</h3>
         <p>
           <strong>Released:</strong> {props.year}<br />
           <strong>Directed By:</strong>{props.director}<br />
