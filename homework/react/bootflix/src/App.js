@@ -24,10 +24,12 @@ class App extends Component {
       const plot = response.data.data.plot
       const year = response.data.datay.y 
       this.setState({
-        title: title
+        title: title,
+        plot: plot,
+        year: year
       })
     })
-    console.log("Search by Title");
+    console.log(title);
   }
 
   searchById = () => {
