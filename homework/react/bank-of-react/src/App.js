@@ -19,7 +19,7 @@ class App extends Component {
     credits: [],
   }
 
-  displayAllDebits = () => {
+ displayAllDebits = () => {
 
     axios.get(`http://Localhost:4000/debits`)
       .then((response) => {
@@ -34,7 +34,7 @@ class App extends Component {
     axios.get('http://localhost:4000/credits')
     .then((response)=> {
       const credits = response.data;
-      this.setState({credits})
+      this.setState({ credits })
     })
   }
  accountBalance =() => {
