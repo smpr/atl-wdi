@@ -1,16 +1,32 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
-class AccountBallance extends Component {
-    render() {
-        return (
-            <div>
-                Account Ballance: {this.props.accountBallance}<br />
-                <Link to="/">Home</Link><br />
-                <Link to="/User">User</Link>
 
-            </div>
-        );
+import React, {Component} from 'react';
+import { Link, Redirect } from "react-router-dom"
+class AccountBalance extends Component {
+    state = {
+        redirectToHome: false
     }
+    saveSomething = () => {
+        console.log("clicked");
+        setTimeout(() => {
+            this.setState({redirectToHome: true})
+        }, 1500)
+    }
+  render() {
+      if(this.state.redirectToHome) {
+          return <Redirect to="/" />
+      }
+    return (
+        <div>
+            <h2>Account Page</h2>
+            <h4>Your balance is ${this.props.accountBalance}</h4>
+            <button onClick={this.saveSomething}>Redirect Button</button>
+         
+          <br />
+          <Link to="/">Home</Link>
+          <br /> <br />
+          <Link to="/user">User Page</Link>
+        </div>
+    );
+  }
 }
-
-export default AccountBallance;
+export default AccountBalance;
