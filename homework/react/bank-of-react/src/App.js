@@ -84,7 +84,7 @@ class App extends Component {
 
         <Switch>
 
-          <Route exact path="/Account" render={AccountBallanceWrapper} />
+          
           <Route exact path="/Debits" render={debitsWrapper} />
           <Route exact path="/Credits" render={creditsWrapper} />
           <Route exact path="/User" render={UserWrapper} />
